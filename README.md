@@ -1,7 +1,9 @@
 # SSNL Lab Emotional Video Test
 
-# Description
+## Stack
+React + Python Server
 
+## Description
 This project is from Stanford SSNL Lab focusing on emotional detection from pre-recorded human videos.
 
 ## Installing and Running
