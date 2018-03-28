@@ -1,3 +1,5 @@
+# OS Files
+.DS_Store
 # node modules
 node_modules/
 dist/
