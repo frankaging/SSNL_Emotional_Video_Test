@@ -1,6 +1,6 @@
 # Emotional Video Research From SSNL at Stanford University
 #### Project Description
-###### This website is designed specifically for psychology study. It contains experiment, in which it will ask participants to rate the emotion expressed by the people the participants see in their videos. The rating is recording by a continuous slider that will appear below the video. After the experiment is finished, some extra questions will be shown to help researchers better understand the participants. This website is developed using React in Javascript. It can be bundled and deployed on any server. Please refer to the demo pdf for a demo layout. 
+###### This website is designed specifically for psychology study. It contains experiment, in which it will ask participants to rate the emotion expressed by the people the participants see in their videos. The rating is recording by a continuous slider that will appear below the video. After the experiment is finished, some extra questions will be shown to help researchers better understand the participants. This website is developed using React in Javascript. It can be bundled and deployed on any server. Please refer to the demo pdf for a demo layout. Any questions regarding the code, please contact `wuzhengx 'at' stanford 'dot' edu.`
 #
 #### Project Demo
 ###### https://web.stanford.edu/~wuzhengx/SSNL/EmotionalTest/build/
