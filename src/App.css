@@ -32,6 +32,16 @@ input, select, button {font: 12px "Century Gothic", Futura, sans-serif;}
   text-align:left;
 }
 
+.intropage h2 {
+  font: 15px "Century Gothic", Futura, sans-serif;
+  display: block;
+  max-width:600px;
+  /* word-wrap:break-word; */
+  margin-left: auto;
+  margin-right: auto;
+  text-align:center;
+}
+
 #legal {
   margin: 0 auto;
   margin-top: 1.5em;

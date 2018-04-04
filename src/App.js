@@ -165,7 +165,7 @@ turk = turk || {};
         style.paddingTop = "15px";
         style.paddingBottom = "15px";
         style.top = "0";
-        style.width = "98%";
+        style.width = "100%";
         style.textAlign = "center";
         style.fontFamily = "arial";
         style.fontSize = "24px";
@@ -456,7 +456,7 @@ class App extends Component {
     /*
     Wait 1.5 seconds and then submit the whole experiment object to Mechanical Turk (mmturkey filters out the functions so we know weâ€™re just submitting properties [i.e. data])
     */
-   // setTimeout(function() { turk.submit(experimentResults);}, 1500);
+   setTimeout(function() { turk.submit(experimentResults);}, 1500);
   }
   render() {
     switch(this.state.value) {
@@ -630,10 +630,11 @@ class Experiments extends Component {
   constructor (props) {
       super(props);
       this.onPlayClicked = this.onPlayClicked.bind(this);
+      this.finishVideoLoading = this.finishVideoLoading.bind(this);
       this.state = {
-          isButtonDisabled: false,
+          isButtonDisabled: true,
           isVidPlayed: false,
-          buttonText: "Play",
+          buttonText: "Loading",
           videoRatings: 50,
           videoRatingsSet: [50]
       }
@@ -658,7 +659,6 @@ class Experiments extends Component {
           isButtonDisabled: true
       });
       var vid = document.getElementById("expvideo"); 
-      vid.load();
       vid.play()
       // set up intervals to report values
       dataCollector = setInterval(
@@ -691,6 +691,14 @@ class Experiments extends Component {
       videoRatings: value
     });
   }
+  finishVideoLoading(event) {
+    var self = this;
+    event.preventDefault();
+    self.setState({
+      isButtonDisabled: false,
+      buttonText: "Play",
+    });
+  }
   render() {
     return (
       <div className = 'experiments'>
@@ -701,7 +709,7 @@ class Experiments extends Component {
               <b><u>When you see the first frame of the video</u></b>, click on the play button to start the video. Please rate how you believe the person in the video is feeling at every moment in time, and remember to <b>make your ratings throughout the video</b>.
           </p>
           <div className = 'videoplayer'>      
-            <video id="expvideo">
+            <video id="expvideo" onCanPlayThrough={this.finishVideoLoading}>
               <source preload="auto" poster={loading} src={sample_video} type="video/mp4"/>
             </video>
           </div>
@@ -946,18 +954,18 @@ class InfoQuestionnaire extends Component {
 class EndPage extends Component {
   render() {
     return (      
-      <div className="endpage">
+      <div className="intropage">
         <ProgressBar />
         <center>
           <br/><br/>
-          <br/><br/>
-          <img src={logo} width="320" height="180" alt="logo"/>
-          <br/><br/>
-          <br/><br/>
-          <p> Thanks you for your time! Your contribution means a lot to us!</p>
-          <br/><br/>
-          <br/><br/>
+          <img src={logo} width="300" height="180" alt="logo"/>
           <h1>Stanford Social Neuroscience Lab</h1>
+          <br/><br/>
+          <h2> You're finished with this task. Thanks for participating! The experiment will automatically inform Amazon that you have completed the task.</h2>
+          <br/><br/>
+          <h2> Thanks you for your time! Your contribution means a lot to us!</h2>
+          <br/><br/>
+          <br/><br/>
         </center>
       </div>
     );
