@@ -207,20 +207,8 @@ var experimentResults = {
   IRI_PT1R: -1, IRI_PT2: -1, IRI_PT3: -1, IRI_PT4R: -1, IRI_PT5: -1, IRI_PT6: -1, IRI_PT7: -1,
   IRI_PD1: -1, IRI_PD2: -1, IRI_PD3R: -1, IRI_PD4: -1, IRI_PD5R: -1, IRI_PD6: -1, IRI_PD7: -1,
 
-  BDI_1: -1, BDI_2: -1, BDI_3: -1, BDI_4: -1, BDI_5: -1, BDI_6: -1,
-  BDI_7: -1, BDI_8: -1, BDI_9: -1, BDI_10: -1, BDI_11: -1, BDI_12: -1,
-
-  LT_1R: -1, LT_2R: -1, LT_3R: -1, LT_4: -1, LT_5: -1, LT_6: -1,
-
-  HPS_1: -1, HPS_2: -1, HPS_3: -1, HPS_4: -1, HPS_5: -1,
-  HPS_6: -1, HPS_7: -1, HPS_8: -1, HPS_9: -1, HPS_10: -1,
-  HPS_11: -1, HPS_12: -1, HPS_13: -1, HPS_14: -1, HPS_15: -1,
-  HPS_16: -1, HPS_17: -1, HPS_18: -1, HPS_19: -1, HPS_20: -1,
-
   IRI_EC: -1, IRI_PT: -1, IRI_PD: -1,
-  BDI: -1, LT_Empathy: -1, HPS: -1,
   
-
   // Demographics
   gender: "",
   age:"",
@@ -254,65 +242,27 @@ function validateComprehensionCheck() {
 }
 
 function ValidateQuestionnairesSlide() {
-  if ($('input[name="IRI_EC1"]:checked').val()!=null &&
-      $('input[name="IRI_EC2R"]:checked').val()!=null &&
-      $('input[name="IRI_EC3"]:checked').val()!=null &&
-      $('input[name="IRI_EC4R"]:checked').val()!=null &&
-      $('input[name="IRI_EC5R"]:checked').val()!=null &&
-      $('input[name="IRI_EC6"]:checked').val()!=null &&
-      $('input[name="IRI_EC7"]:checked').val()!=null &&
-      $('input[name="IRI_PT1R"]:checked').val()!=null &&
-      $('input[name="IRI_PT2"]:checked').val()!=null &&
-      $('input[name="IRI_PT3"]:checked').val()!=null &&
-      $('input[name="IRI_PT4R"]:checked').val()!=null &&
-      $('input[name="IRI_PT5"]:checked').val()!=null &&
-      $('input[name="IRI_PT6"]:checked').val()!=null &&
-      $('input[name="IRI_PT7"]:checked').val()!=null &&
-      $('input[name="IRI_PD1"]:checked').val()!=null &&
-      $('input[name="IRI_PD2"]:checked').val()!=null &&
-      $('input[name="IRI_PD3R"]:checked').val()!=null &&
-      $('input[name="IRI_PD4"]:checked').val()!=null &&
-      $('input[name="IRI_PD5R"]:checked').val()!=null &&
-      $('input[name="IRI_PD6"]:checked').val()!=null &&
-      $('input[name="IRI_PD7"]:checked').val()!=null &&
-      $('input[name="BDI_1"]:checked').val()!=null &&
-      $('input[name="BDI_2"]:checked').val()!=null &&
-      $('input[name="BDI_3"]:checked').val()!=null &&
-      $('input[name="BDI_4"]:checked').val()!=null &&
-      $('input[name="BDI_5"]:checked').val()!=null &&
-      $('input[name="BDI_6"]:checked').val()!=null &&
-      $('input[name="BDI_7"]:checked').val()!=null &&
-      $('input[name="BDI_8"]:checked').val()!=null &&
-      $('input[name="BDI_9"]:checked').val()!=null &&
-      $('input[name="BDI_10"]:checked').val()!=null &&
-      $('input[name="BDI_11"]:checked').val()!=null &&
-      $('input[name="BDI_12"]:checked').val()!=null &&
-      $('input[name="LT_1R"]:checked').val()!=null &&
-      $('input[name="LT_2R"]:checked').val()!=null &&
-      $('input[name="LT_3R"]:checked').val()!=null &&
-      $('input[name="LT_4"]:checked').val()!=null &&
-      $('input[name="LT_5"]:checked').val()!=null &&
-      $('input[name="LT_6"]:checked').val()!=null &&
-      $('input[name="HPS_1"]:checked').val()!=null &&
-      $('input[name="HPS_2"]:checked').val()!=null &&
-      $('input[name="HPS_3"]:checked').val()!=null &&
-      $('input[name="HPS_4"]:checked').val()!=null &&
-      $('input[name="HPS_5"]:checked').val()!=null &&
-      $('input[name="HPS_6"]:checked').val()!=null &&
-      $('input[name="HPS_7"]:checked').val()!=null &&
-      $('input[name="HPS_8"]:checked').val()!=null &&
-      $('input[name="HPS_9"]:checked').val()!=null &&
-      $('input[name="HPS_10"]:checked').val()!=null &&
-      $('input[name="HPS_11"]:checked').val()!=null &&
-      $('input[name="HPS_12"]:checked').val()!=null &&
-      $('input[name="HPS_13"]:checked').val()!=null &&
-      $('input[name="HPS_14"]:checked').val()!=null &&
-      $('input[name="HPS_15"]:checked').val()!=null &&
-      $('input[name="HPS_16"]:checked').val()!=null &&
-      $('input[name="HPS_17"]:checked').val()!=null &&
-      $('input[name="HPS_18"]:checked').val()!=null &&
-      $('input[name="HPS_19"]:checked').val()!=null &&
-      $('input[name="HPS_20"]:checked').val()!=null
+  if ($('input[name="IRI_EC_1"]:checked').val()!=null &&
+      $('input[name="IRI_EC_2R"]:checked').val()!=null &&
+      $('input[name="IRI_EC_3"]:checked').val()!=null &&
+      $('input[name="IRI_EC_4R"]:checked').val()!=null &&
+      $('input[name="IRI_EC_5R"]:checked').val()!=null &&
+      $('input[name="IRI_EC_6"]:checked').val()!=null &&
+      $('input[name="IRI_EC_7"]:checked').val()!=null &&
+      $('input[name="IRI_PT_1R"]:checked').val()!=null &&
+      $('input[name="IRI_PT_2"]:checked').val()!=null &&
+      $('input[name="IRI_PT_3"]:checked').val()!=null &&
+      $('input[name="IRI_PT_4R"]:checked').val()!=null &&
+      $('input[name="IRI_PT_5"]:checked').val()!=null &&
+      $('input[name="IRI_PT_6"]:checked').val()!=null &&
+      $('input[name="IRI_PT_7"]:checked').val()!=null &&
+      $('input[name="IRI_PD_1"]:checked').val()!=null &&
+      $('input[name="IRI_PD_2"]:checked').val()!=null &&
+      $('input[name="IRI_PD_3R"]:checked').val()!=null &&
+      $('input[name="IRI_PD_4"]:checked').val()!=null &&
+      $('input[name="IRI_PD_5R"]:checked').val()!=null &&
+      $('input[name="IRI_PD_6"]:checked').val()!=null &&
+      $('input[name="IRI_PD_7"]:checked').val()!=null
       ) {
       return true;
   } else {
@@ -472,6 +422,9 @@ class App extends Component {
           // experiments video 1 comprehension
           return (<CompQuestionnaire value={this.state.experimentCount} onClickParent={() => this.buttonCallbackNextExperiment()}/>);
       case 4:
+          // table questions for emotion
+          return (<TableQuestionnaireIntro onClickParent={() => this.buttonCallback()}/>);
+      case 5:
           // table questions for emotion
           return (<TableQuestionnaire onClickParent={() => this.buttonCallback()}/>);
       case 5:
@@ -759,7 +712,7 @@ class CompQuestionnaire extends Component {
 }
 
 // Peronsal questionnaire
-class PersonalQuestionnaire extends Component {
+class TableQuestionnaireIntro extends Component {
   render() {
     return (
       <div className = 'personalquestionnaire'>
@@ -779,10 +732,33 @@ class PersonalQuestionnaire extends Component {
 // Table questionnaire
 class TableQuestionnaire extends Component {
   recordValues() {
-    experimentResults.IRI_EC1 = parseInt($('input[name="IRI_EC1"]:checked').val(), 10);
-    experimentResults.IRI_EC2R = parseInt($('input[name="IRI_PT1R"]:checked').val(), 10);
-    experimentResults.IRI_EC3 = parseInt($('input[name="IRI_EC2R"]:checked').val(), 10);
-    experimentResults.IRI_EC4R = parseInt($('input[name="IRI_PD1"]:checked').val(), 10);
+    experimentResults.IRI_EC1 = parseInt($('input[name="IRI_EC_1"]:checked').val(), 10);
+    experimentResults.IRI_EC2R = parseInt($('input[name="IRI_EC_2R"]:checked').val(), 10);
+    experimentResults.IRI_EC3 = parseInt($('input[name="IRI_EC_3"]:checked').val(), 10);
+    experimentResults.IRI_EC4R = parseInt($('input[name="IRI_EC_4R"]:checked').val(), 10);
+    experimentResults.IRI_EC5R = parseInt($('input[name="IRI_EC_5R"]:checked').val(), 10);
+    experimentResults.IRI_EC6 = parseInt($('input[name="IRI_EC_6"]:checked').val(), 10);
+    experimentResults.IRI_EC7 = parseInt($('input[name="IRI_EC_7"]:checked').val(), 10);
+
+    experimentResults.IRI_PT1R = parseInt($('input[name="IRI_PT_1R"]:checked').val(), 10);
+    experimentResults.IRI_PT2 = parseInt($('input[name="IRI_PT_2"]:checked').val(), 10);
+    experimentResults.IRI_PT3 = parseInt($('input[name="IRI_PT_3"]:checked').val(), 10);
+    experimentResults.IRI_PT4R = parseInt($('input[name="IRI_PT_4R"]:checked').val(), 10);
+    experimentResults.IRI_PT5 = parseInt($('input[name="IRI_PT_5"]:checked').val(), 10);
+    experimentResults.IRI_PT6 = parseInt($('input[name="IRI_PT_6"]:checked').val(), 10);
+    experimentResults.IRI_PT7 = parseInt($('input[name="IRI_PT_7"]:checked').val(), 10);
+
+    experimentResults.IRI_PD1 = parseInt($('input[name="IRI_PD_1"]:checked').val(), 10);
+    experimentResults.IRI_PD2 = parseInt($('input[name="IRI_PD_2"]:checked').val(), 10);
+    experimentResults.IRI_PD3R = parseInt($('input[name="IRI_PD_3R"]:checked').val(), 10);
+    experimentResults.IRI_PD4 = parseInt($('input[name="IRI_PD_4"]:checked').val(), 10);
+    experimentResults.IRI_PD5R = parseInt($('input[name="IRI_PD_5R"]:checked').val(), 10);
+    experimentResults.IRI_PD6 = parseInt($('input[name="IRI_PD_6"]:checked').val(), 10);
+    experimentResults.IRI_PD7 = parseInt($('input[name="IRI_PD_7"]:checked').val(), 10);
+
+    experimentResults.IRI_EC = (experimentResults.IRI_EC1 + experimentResults.IRI_EC2R + experimentResults.IRI_EC3 + experimentResults.IRI_EC4R + experimentResults.IRI_EC5R + experimentResults.IRI_EC6 + experimentResults.IRI_EC7)
+    experimentResults.IRI_PT = (experimentResults.IRI_PT1R + experimentResults.IRI_PT2 + experimentResults.IRI_PT3 + experimentResults.IRI_PT4R + experimentResults.IRI_PT5 + experimentResults.IRI_PT6 + experimentResults.IRI_PT7)
+    experimentResults.IRI_PD = (experimentResults.IRI_PD1 + experimentResults.IRI_PD2 + experimentResults.IRI_PD3R + experimentResults.IRI_PD4 + experimentResults.IRI_PD5R + experimentResults.IRI_PD6 + experimentResults.IRI_PD7)
   }
   render() {
     return (
@@ -807,51 +783,256 @@ class TableQuestionnaire extends Component {
 
             </td><td> 
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
-                                <input type="radio" name="IRI_EC1" value="1" /> &nbsp;&nbsp;
-                                <input type="radio" name="IRI_EC1" value="2" /> &nbsp;&nbsp;   
-                                <input type="radio" name="IRI_EC1" value="3" /> &nbsp;&nbsp;   
-                                <input type="radio" name="IRI_EC1" value="4" /> &nbsp;&nbsp;   
-                                <input type="radio" name="IRI_EC1" value="5" /> &nbsp;&nbsp;
-            </td></tr>
-            <tr style={{height: 10}}></tr>
-            <tr><td> 
-
-                I sometimes find it difficult to see things from the "other guy's" point of view.
-            
-            </td><td>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
-                                <input type="radio" name="IRI_PT1R" value="1" /> &nbsp;&nbsp;     
-                                <input type="radio" name="IRI_PT1R" value="2" /> &nbsp;&nbsp;    
-                                <input type="radio" name="IRI_PT1R" value="3" /> &nbsp;&nbsp;    
-                                <input type="radio" name="IRI_PT1R" value="4" /> &nbsp;&nbsp;    
-                                <input type="radio" name="IRI_PT1R" value="5" /> &nbsp;&nbsp;
+                                <input type="radio" name="IRI_EC_1" value="0" /> &nbsp;&nbsp;
+                                <input type="radio" name="IRI_EC_1" value="1" /> &nbsp;&nbsp;   
+                                <input type="radio" name="IRI_EC_1" value="2" /> &nbsp;&nbsp;   
+                                <input type="radio" name="IRI_EC_1" value="3" /> &nbsp;&nbsp;   
+                                <input type="radio" name="IRI_EC_1" value="4" /> &nbsp;&nbsp;
             </td></tr>
             <tr style={{height: 10}}></tr>
             <tr><td>
 
                 Sometimes I don't feel very sorry for other people when they are having problems.
 
-            </td><td>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
-                                <input type="radio" name="IRI_EC2R" value="1" /> &nbsp;&nbsp;  
-                                <input type="radio" name="IRI_EC2R" value="2" /> &nbsp;&nbsp; 
-                                <input type="radio" name="IRI_EC2R" value="3" /> &nbsp;&nbsp; 
-                                <input type="radio" name="IRI_EC2R" value="4" /> &nbsp;&nbsp; 
-                                <input type="radio" name="IRI_EC2R" value="5" /> &nbsp;&nbsp;
+            </td><td> 
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
+                                <input type="radio" name="IRI_EC_2R" value="4" /> &nbsp;&nbsp;
+                                <input type="radio" name="IRI_EC_2R" value="3" /> &nbsp;&nbsp;   
+                                <input type="radio" name="IRI_EC_2R" value="2" /> &nbsp;&nbsp;   
+                                <input type="radio" name="IRI_EC_2R" value="1" /> &nbsp;&nbsp;   
+                                <input type="radio" name="IRI_EC_2R" value="0" /> &nbsp;&nbsp;
             </td></tr>
             <tr style={{height: 10}}></tr>
+            <tr><td> 
+
+                When I see someone being taken advantage of, I feel kind of protective towards them.
+            
+            </td><td>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
+                                <input type="radio" name="IRI_EC_3" value="0" /> &nbsp;&nbsp;     
+                                <input type="radio" name="IRI_EC_3" value="1" /> &nbsp;&nbsp;    
+                                <input type="radio" name="IRI_EC_3" value="2" /> &nbsp;&nbsp;    
+                                <input type="radio" name="IRI_EC_3" value="3" /> &nbsp;&nbsp;    
+                                <input type="radio" name="IRI_EC_3" value="4" /> &nbsp;&nbsp;
+            </td></tr>
+            <tr style={{height: 10}}></tr>
+            <tr><td>
+
+                Other people's misfortunes do not usually disturb me a great deal.
+
+            </td><td>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
+                                <input type="radio" name="IRI_EC_4R" value="4" /> &nbsp;&nbsp;  
+                                <input type="radio" name="IRI_EC_4R" value="3" /> &nbsp;&nbsp; 
+                                <input type="radio" name="IRI_EC_4R" value="2" /> &nbsp;&nbsp; 
+                                <input type="radio" name="IRI_EC_4R" value="1" /> &nbsp;&nbsp; 
+                                <input type="radio" name="IRI_EC_4R" value="0" /> &nbsp;&nbsp;
+            </td></tr>
+            <tr style={{height: 10}}></tr>
+            <tr><td> 
+
+                When I see someone being treated unfairly, I sometimes don't feel very much pity for them.
+            
+            </td><td>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
+                                <input type="radio" name="IRI_EC_5R" value="4" /> &nbsp;&nbsp; 
+                                <input type="radio" name="IRI_EC_5R" value="3" /> &nbsp;&nbsp; 
+                                <input type="radio" name="IRI_EC_5R" value="2" /> &nbsp;&nbsp; 
+                                <input type="radio" name="IRI_EC_5R" value="1" /> &nbsp;&nbsp; 
+                                <input type="radio" name="IRI_EC_5R" value="0" /> &nbsp;&nbsp; 
+            </td></tr>
+            <tr style={{height: 10}}></tr>
+            <tr><td> 
+
+                I am often quite touched by things that I see happen.
+            
+            </td><td>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
+                                <input type="radio" name="IRI_EC_6" value="0" /> &nbsp;&nbsp; 
+                                <input type="radio" name="IRI_EC_6" value="1" /> &nbsp;&nbsp; 
+                                <input type="radio" name="IRI_EC_6" value="2" /> &nbsp;&nbsp; 
+                                <input type="radio" name="IRI_EC_6" value="3" /> &nbsp;&nbsp; 
+                                <input type="radio" name="IRI_EC_6" value="4" /> &nbsp;&nbsp; 
+            </td></tr>
+            <tr style={{height: 10}}></tr>
+            <tr><td> 
+
+                I would describe myself as a pretty soft-hearted person.
+            
+            </td><td>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
+                                <input type="radio" name="IRI_EC_7" value="0" /> &nbsp;&nbsp; 
+                                <input type="radio" name="IRI_EC_7" value="1" /> &nbsp;&nbsp; 
+                                <input type="radio" name="IRI_EC_7" value="2" /> &nbsp;&nbsp; 
+                                <input type="radio" name="IRI_EC_7" value="3" /> &nbsp;&nbsp; 
+                                <input type="radio" name="IRI_EC_7" value="4" /> &nbsp;&nbsp; 
+            </td></tr>
+            <tr style={{height: 50}}></tr>
             <tr><td> 
 
                 In emergency situations, I feel apprehensive and ill-at-ease.
             
             </td><td>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
-                                <input type="radio" name="IRI_PD1" value="1" /> &nbsp;&nbsp; 
-                                <input type="radio" name="IRI_PD1" value="2" /> &nbsp;&nbsp; 
-                                <input type="radio" name="IRI_PD1" value="3" /> &nbsp;&nbsp; 
-                                <input type="radio" name="IRI_PD1" value="4" /> &nbsp;&nbsp; 
-                                <input type="radio" name="IRI_PD1" value="5" /> &nbsp;&nbsp; 
+                                <input type="radio" name="IRI_PD_1" value="0" /> &nbsp;&nbsp; 
+                                <input type="radio" name="IRI_PD_1" value="1" /> &nbsp;&nbsp; 
+                                <input type="radio" name="IRI_PD_1" value="2" /> &nbsp;&nbsp; 
+                                <input type="radio" name="IRI_PD_1" value="3" /> &nbsp;&nbsp; 
+                                <input type="radio" name="IRI_PD_1" value="4" /> &nbsp;&nbsp; 
+            </td></tr>
+            <tr style={{height: 10}}></tr>
+            <tr><td> 
+
+                I sometimes feel helpless when I am in the middle of a very emotional situation.
+            
+            </td><td>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
+                                <input type="radio" name="IRI_PD_2" value="0" /> &nbsp;&nbsp; 
+                                <input type="radio" name="IRI_PD_2" value="1" /> &nbsp;&nbsp; 
+                                <input type="radio" name="IRI_PD_2" value="2" /> &nbsp;&nbsp; 
+                                <input type="radio" name="IRI_PD_2" value="3" /> &nbsp;&nbsp; 
+                                <input type="radio" name="IRI_PD_2" value="4" /> &nbsp;&nbsp; 
+            </td></tr>
+            <tr style={{height: 10}}></tr>
+            <tr><td> 
+
+                When I see someone get hurt, I tend to remain calm.
+            
+            </td><td>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
+                                <input type="radio" name="IRI_PD_3R" value="4" /> &nbsp;&nbsp; 
+                                <input type="radio" name="IRI_PD_3R" value="3" /> &nbsp;&nbsp; 
+                                <input type="radio" name="IRI_PD_3R" value="2" /> &nbsp;&nbsp; 
+                                <input type="radio" name="IRI_PD_3R" value="1" /> &nbsp;&nbsp; 
+                                <input type="radio" name="IRI_PD_3R" value="0" /> &nbsp;&nbsp; 
+            </td></tr>
+            <tr style={{height: 10}}></tr>
+            <tr><td> 
+
+                Being in a tense emotional situation scares me.
+            
+            </td><td>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
+                                <input type="radio" name="IRI_PD_4" value="0" /> &nbsp;&nbsp; 
+                                <input type="radio" name="IRI_PD_4" value="1" /> &nbsp;&nbsp; 
+                                <input type="radio" name="IRI_PD_4" value="2" /> &nbsp;&nbsp; 
+                                <input type="radio" name="IRI_PD_4" value="3" /> &nbsp;&nbsp; 
+                                <input type="radio" name="IRI_PD_4" value="4" /> &nbsp;&nbsp; 
+            </td></tr>
+            <tr style={{height: 10}}></tr>
+            <tr><td> 
+
+                I am usually pretty effective in dealing with emergencies.
+            
+            </td><td>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
+                                <input type="radio" name="IRI_PD_5R" value="4" /> &nbsp;&nbsp; 
+                                <input type="radio" name="IRI_PD_5R" value="3" /> &nbsp;&nbsp; 
+                                <input type="radio" name="IRI_PD_5R" value="2" /> &nbsp;&nbsp; 
+                                <input type="radio" name="IRI_PD_5R" value="1" /> &nbsp;&nbsp; 
+                                <input type="radio" name="IRI_PD_5R" value="0" /> &nbsp;&nbsp; 
+            </td></tr>
+            <tr style={{height: 10}}></tr>
+            <tr><td> 
+
+                I tend to lose control during emergencies.
+            
+            </td><td>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
+                                <input type="radio" name="IRI_PD_6" value="0" /> &nbsp;&nbsp; 
+                                <input type="radio" name="IRI_PD_6" value="1" /> &nbsp;&nbsp; 
+                                <input type="radio" name="IRI_PD_6" value="2" /> &nbsp;&nbsp; 
+                                <input type="radio" name="IRI_PD_6" value="3" /> &nbsp;&nbsp; 
+                                <input type="radio" name="IRI_PD_6" value="4" /> &nbsp;&nbsp; 
+            </td></tr>
+            <tr style={{height: 10}}></tr>
+            <tr><td> 
+
+                When I see someone who badly needs help in an emergency, I go to pieces.
+            
+            </td><td>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
+                                <input type="radio" name="IRI_PD_7" value="0" /> &nbsp;&nbsp; 
+                                <input type="radio" name="IRI_PD_7" value="1" /> &nbsp;&nbsp; 
+                                <input type="radio" name="IRI_PD_7" value="2" /> &nbsp;&nbsp; 
+                                <input type="radio" name="IRI_PD_7" value="3" /> &nbsp;&nbsp; 
+                                <input type="radio" name="IRI_PD_7" value="4" /> &nbsp;&nbsp; 
+            </td></tr>
+            <tr style={{height: 50}}></tr>
+            <tr><td> 
+
+                I sometimes find it difficult to see things from the "other guy's" point of view.
+            
+            </td><td>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
+                                <input type="radio" name="IRI_PT_1R" value="4" /> &nbsp;&nbsp; 
+                                <input type="radio" name="IRI_PT_1R" value="3" /> &nbsp;&nbsp; 
+                                <input type="radio" name="IRI_PT_1R" value="2" /> &nbsp;&nbsp; 
+                                <input type="radio" name="IRI_PT_1R" value="1" /> &nbsp;&nbsp; 
+                                <input type="radio" name="IRI_PT_1R" value="0" /> &nbsp;&nbsp; 
+            </td></tr>
+            <tr style={{height: 10}}></tr>
+            <tr><td> 
+
+                I try to look at everybody's side of a disagreement before I make a decision.
+            
+            </td><td>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
+                                <input type="radio" name="IRI_PT_2" value="0" /> &nbsp;&nbsp; 
+                                <input type="radio" name="IRI_PT_2" value="1" /> &nbsp;&nbsp; 
+                                <input type="radio" name="IRI_PT_2" value="2" /> &nbsp;&nbsp; 
+                                <input type="radio" name="IRI_PT_2" value="3" /> &nbsp;&nbsp; 
+                                <input type="radio" name="IRI_PT_2" value="4" /> &nbsp;&nbsp; 
+            </td></tr>
+            <tr style={{height: 10}}></tr>
+            <tr><td> 
+
+                I sometimes try to understand my friends better by imagining how things look from their perspective.
+            
+            </td><td>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
+                                <input type="radio" name="IRI_PT_3" value="0" /> &nbsp;&nbsp; 
+                                <input type="radio" name="IRI_PT_3" value="1" /> &nbsp;&nbsp; 
+                                <input type="radio" name="IRI_PT_3" value="2" /> &nbsp;&nbsp; 
+                                <input type="radio" name="IRI_PT_3" value="3" /> &nbsp;&nbsp; 
+                                <input type="radio" name="IRI_PT_3" value="4" /> &nbsp;&nbsp; 
+            </td></tr>
+            <tr style={{height: 10}}></tr>
+            <tr><td> 
+
+                If I'm sure I'm right about something, I don't waste much time listening to other people's arguments.
+            
+            </td><td>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
+                                <input type="radio" name="IRI_PT_4R" value="4" /> &nbsp;&nbsp; 
+                                <input type="radio" name="IRI_PT_4R" value="3" /> &nbsp;&nbsp; 
+                                <input type="radio" name="IRI_PT_4R" value="2" /> &nbsp;&nbsp; 
+                                <input type="radio" name="IRI_PT_4R" value="1" /> &nbsp;&nbsp; 
+                                <input type="radio" name="IRI_PT_4R" value="0" /> &nbsp;&nbsp; 
+            </td></tr>
+            <tr style={{height: 10}}></tr>
+            <tr><td> 
+
+                I believe that there are two sides to every question and try to look at them both.
+            
+            </td><td>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
+                                <input type="radio" name="IRI_PT_5" value="0" /> &nbsp;&nbsp; 
+                                <input type="radio" name="IRI_PT_5" value="1" /> &nbsp;&nbsp; 
+                                <input type="radio" name="IRI_PT_5" value="2" /> &nbsp;&nbsp; 
+                                <input type="radio" name="IRI_PT_5" value="3" /> &nbsp;&nbsp; 
+                                <input type="radio" name="IRI_PT_5" value="4" /> &nbsp;&nbsp; 
+            </td></tr>
+            <tr style={{height: 10}}></tr>
+            <tr><td> 
+
+                When I'm upset at someone, I usually try to "put myself in his shoes" for a while.
+            
+            </td><td>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
+                                <input type="radio" name="IRI_PT_6" value="0" /> &nbsp;&nbsp; 
+                                <input type="radio" name="IRI_PT_6" value="1" /> &nbsp;&nbsp; 
+                                <input type="radio" name="IRI_PT_6" value="2" /> &nbsp;&nbsp; 
+                                <input type="radio" name="IRI_PT_6" value="3" /> &nbsp;&nbsp; 
+                                <input type="radio" name="IRI_PT_6" value="4" /> &nbsp;&nbsp; 
+            </td></tr>
+            <tr style={{height: 10}}></tr>
+            <tr><td> 
+
+                Before criticizing somebody, I try to imagine how I would feel if I were in their place.
+            
+            </td><td>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
+                                <input type="radio" name="IRI_PT_7" value="0" /> &nbsp;&nbsp; 
+                                <input type="radio" name="IRI_PT_7" value="1" /> &nbsp;&nbsp; 
+                                <input type="radio" name="IRI_PT_7" value="2" /> &nbsp;&nbsp; 
+                                <input type="radio" name="IRI_PT_7" value="3" /> &nbsp;&nbsp; 
+                                <input type="radio" name="IRI_PT_7" value="4" /> &nbsp;&nbsp; 
             </td></tr>
 
         </table>
-        <button type="button" onClick={() => {this.props.onClickParent();this.recordValues()}}>Next</button>
+        <button type="button" onClick={() => {if(ValidateQuestionnairesSlide()){this.props.onClickParent();this.recordValues()}}}>Next</button>
         </center>
       </div>
     );
