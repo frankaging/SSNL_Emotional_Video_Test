@@ -148,11 +148,15 @@ button[disabled] {
   text-align: center;
 }
 
-video {
-  width: 500px;
-  height: 350px;
+.videoplayerhide {
+  width: 100px;
+  height: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+  opacity: 0;
 }
-
 
 /* Questions */
 

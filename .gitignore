@@ -2,6 +2,7 @@
 
 # sample videos
 /src/demo_videos
+/src/test_videos
 
 # dependencies
 /node_modules
